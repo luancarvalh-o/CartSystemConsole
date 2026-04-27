@@ -1,0 +1,15 @@
+C:\Users\Luan\Documents\Cart\CartSystem\bin\Debug\net10.0\CartSystem.exe
+C:\Users\Luan\Documents\Cart\CartSystem\bin\Debug\net10.0\CartSystem.deps.json
+C:\Users\Luan\Documents\Cart\CartSystem\bin\Debug\net10.0\CartSystem.runtimeconfig.json
+C:\Users\Luan\Documents\Cart\CartSystem\bin\Debug\net10.0\CartSystem.dll
+C:\Users\Luan\Documents\Cart\CartSystem\bin\Debug\net10.0\CartSystem.pdb
+C:\Users\Luan\Documents\Cart\CartSystem\obj\Debug\net10.0\CartSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luan\Documents\Cart\CartSystem\obj\Debug\net10.0\CartSystem.AssemblyInfoInputs.cache
+C:\Users\Luan\Documents\Cart\CartSystem\obj\Debug\net10.0\CartSystem.AssemblyInfo.cs
+C:\Users\Luan\Documents\Cart\CartSystem\obj\Debug\net10.0\CartSystem.csproj.CoreCompileInputs.cache
+C:\Users\Luan\Documents\Cart\CartSystem\obj\Debug\net10.0\CartSystem.sourcelink.json
+C:\Users\Luan\Documents\Cart\CartSystem\obj\Debug\net10.0\CartSystem.dll
+C:\Users\Luan\Documents\Cart\CartSystem\obj\Debug\net10.0\refint\CartSystem.dll
+C:\Users\Luan\Documents\Cart\CartSystem\obj\Debug\net10.0\CartSystem.pdb
+C:\Users\Luan\Documents\Cart\CartSystem\obj\Debug\net10.0\CartSystem.genruntimeconfig.cache
+C:\Users\Luan\Documents\Cart\CartSystem\obj\Debug\net10.0\ref\CartSystem.dll

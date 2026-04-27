@@ -40,7 +40,7 @@ class Program
         }
 
         Console.ReadKey();
-        Menu(); // recursividade 🔥
+        Menu();  
     }
 
     static void ListProducts()
@@ -49,32 +49,41 @@ class Program
 
         foreach (var p in Data.Products)
         {
-            Console.WriteLine($"{p.Name} - ${p.Price}");
+            Console.WriteLine($"{p.Name} - R${p.Price}");
         }
 
         Line();
     }
 
-    static void AddProduct()
+   static void AddProduct()
+{
+    Console.Write("Product name: ");
+    var name = Console.ReadLine();
+
+    Console.Write("Price: ");
+    decimal price = decimal.Parse(Console.ReadLine());
+
+    Console.Write("Quantity: ");
+    int quantity = int.Parse(Console.ReadLine());
+
+    var existingProduct = Data.Products.FirstOrDefault(p => p.Name == name);
+
+    Product product;
+
+    if (existingProduct != null)
     {
-        Console.Write("Product name: ");
-        var name = Console.ReadLine();
-
-        Console.Write("Quantity: ");
-        int quantity = int.Parse(Console.ReadLine());
-
-        var product = Data.Products.FirstOrDefault(p => p.Name == name);
-
-        if (product != null)
-        {
-            cartService.AddProduct(product, quantity);
-            Console.WriteLine("Added!");
-        }
-        else
-        {
-            Console.WriteLine("Product not found!");
-        }
+        product = existingProduct;
     }
+    else
+    {
+        product = new Product(name, price);
+        Data.Products.Add(product);
+    }
+
+    cartService.AddProduct(product, quantity);
+
+    Console.WriteLine("Product added to cart!");
+}
 
     static void ViewCart()
     {
@@ -90,10 +99,10 @@ class Program
 
         foreach (var item in cart.Items)
         {
-            Console.WriteLine($"{item.CartProduct.Name} x{item.Quantity} = ${item.Subtotal()}");
+            Console.WriteLine($"{item.CartProduct.Name} x{item.Quantity} = R${item.Subtotal()}");
         }
 
-        Console.WriteLine($"Total: ${cartService.GetTotal()}");
+        Console.WriteLine($"Total: R${cartService.GetTotal()}");
 
         Line();
     }
@@ -114,7 +123,7 @@ class Program
         var finalTotal = discountService.ApplyDiscount(total);
 
         Line();
-        Console.WriteLine($"Total with discount: ${finalTotal}");
+        Console.WriteLine($"Total with discount: R${finalTotal}");
         Line();
     }
 }
